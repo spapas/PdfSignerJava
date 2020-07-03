@@ -18,6 +18,7 @@ import java.security.cert.Certificate;
 
 public class Main {
     // From Itext in Action
+    /*
     public static void signer(String original, String dest) throws NoSuchProviderException, KeyStoreException, IOException {
         KeyStore ks = KeyStore.getInstance("pkcs12", "BC");
         ks.load(new FileInputStream(path), keystore_password.toCharArray());
@@ -43,10 +44,11 @@ public class Main {
             appearance.setRenderingMode(
                     PdfSignatureAppearance.RenderingMode.GRAPHIC);
         }
-        */
+
 
         stamper.close();
     }
+        */
 
     public static void createPdf(String filename)
             throws IOException, DocumentException {
@@ -77,11 +79,12 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("X");
+        /*
         try {
             createPdf("z.pdf");
-            signer("z.pdf", "zz.pdf");
+            //signer("z.pdf", "zz.pdf");
         } catch (IOException | NoSuchProviderException | KeyStoreException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }
